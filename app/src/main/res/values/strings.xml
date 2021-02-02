@@ -1,4 +1,14 @@
 <resources>
     <string name="app_name">CafeReviewApp</string>
+    <string name="email">이메일</string>
+    <string name="password">비밀번호</string>
+    <string name="signin">로그인</string>
+    <string name="success_login">로그인 성공</string>
+    <string name="failed_login">로그인 실패</string>
+    <string name="signup">회원가입</string>
+    <string name="success_signup">회원가입 성공</string>
+    <string name="failed_signup">회원가입 실패</string>
     <string name="default_web_client_id" />
+    <string name="firebase_web_client_id">207195799442-pjv04ntu64ab794mtjtjop09pjc7geev.apps.googleusercontent.com</string>
+
 </resources>
