@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="20dp"
-    android:background="@color/white"
-    android:gravity="center"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:orientation="vertical">
+
         <EditText
             android:id="@+id/edit_email"
-            android:hint="Email"
+            android:text="@string/email"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:inputType="textEmailAddress"
@@ -23,7 +24,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:inputType="textPassword"
-            android:hint="Password"
+            android:text="@string/password"
             android:layout_gravity="center" />
 
 
@@ -38,25 +39,24 @@
             android:id="@+id/emailLoginBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="로그인"
+            android:text="@string/signin"
             android:layout_weight="1" />
         <Button
             android:id="@+id/registrationBtn"
             android:layout_marginLeft="16dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="회원가입"
+            android:text="@string/signup"
             android:layout_weight="1" />
 
     </LinearLayout>
 
     <!--Google Sign ln 부분-->
     <com.google.android.gms.common.SignInButton
-        android:id="@+id/btn_googleSignln"
+        android:id="@+id/signInButton"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_width="match_parent">
-
+        android:layout_marginTop="10dp">
     </com.google.android.gms.common.SignInButton>
 
 </LinearLayout>
