@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "207195799442",
+    "project_id": "cafereview-bf239",
+    "storage_bucket": "cafereview-bf239.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:207195799442:android:c70e1ecc58107e6bca8b4b",
+        "android_client_info": {
+          "package_name": "com.example.cafereviewapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "207195799442-pjv04ntu64ab794mtjtjop09pjc7geev.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjAdQSzN7g2t0jMYN39Mcwh4N-i8mU2wE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "207195799442-pjv04ntu64ab794mtjtjop09pjc7geev.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
