@@ -41,32 +41,22 @@ class LoginActivity : AppCompatActivity() {
 
     }
 
-    fun loginEmail() {
+    private fun loginEmail(){
         var email = edit_email.text.toString()
         var password = edit_password.text.toString()
+        FirebaseAuth.getInstance().signInWithEmailAndPassword(email,password).addOnCompleteListener { task ->
+            if(task.isSuccessful){
+                var currentUser = FirebaseAuth.getInstance().currentUser
+                val user = FirebaseAuth.getInstance().currentUser?.uid
 
-        FirebaseAuth.getInstance().signInWithEmailAndPassword(email, password)
-            .addOnCompleteListener { task ->
-                if (task.isSuccessful) {
-                    var currentUser = FirebaseAuth.getInstance().currentUser
-                    val user = FirebaseAuth.getInstance().currentUser?.uid
-
-                    if (currentUser != null) {
-
-                        var doc = FirebaseFirestore.getInstance().collection("users").document(user.toString())
-
-                        doc.get().addOnSuccessListener { document ->
-                            if (document.data != null) {  //로그인 성공
-                                Toast.makeText(this,"로그인 성공",Toast.LENGTH_SHORT).show()
-                                startActivity(Intent(this, MainActivity::class.java))
-                                this.finish()
-                            }
-                        }
-                    }
-                } else {
-                    Toast.makeText(this, "가입정보가 확인되지 않습니다.가입하시기 위해서는 회원가입버튼을 눌러주세요.", Toast.LENGTH_SHORT).show()
+                if (currentUser != null) {
+                    startActivity(Intent(this, MainActivity::class.java))
+                    this.finish()
                 }
+            } else{
+                Toast.makeText(this,"로그인 실패",Toast.LENGTH_SHORT).show()
             }
+        }
     }
 
 
