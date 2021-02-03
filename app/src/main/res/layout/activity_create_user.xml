@@ -18,7 +18,7 @@
 
         <EditText
             android:id="@+id/email_result"
-            android:text="@string/email"
+            android:hint="@string/email"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:inputType="text"
@@ -28,7 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:inputType="textPassword"
-            android:text="@string/password"
+            android:hint="@string/password"
             android:layout_gravity="center" />
 
 

@@ -45,6 +45,8 @@ class createUserActivity : AppCompatActivity() {
                 if (task.isSuccessful) {
                     // 계정생성과정으로 넘기는 부분
                     Toast.makeText(this,"계정생성",Toast.LENGTH_SHORT).show()
+                    startActivity(Intent(this, LoginActivity::class.java))
+                    this.finish()
                 } else {
                     Toast.makeText(this,"생성실패",Toast.LENGTH_SHORT).show()
                 }
