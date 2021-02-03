@@ -4,10 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".createUserActivity"
     android:orientation="vertical"
     android:gravity="center"
     android:padding="20dp"
-    tools:context=".LoginActivity">
+    >
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,14 +17,14 @@
         android:orientation="vertical">
 
         <EditText
-            android:id="@+id/edit_email"
+            android:id="@+id/email_result"
             android:text="@string/email"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:inputType="text"
             android:layout_gravity="center" />
         <EditText
-            android:id="@+id/edit_password"
+            android:id="@+id/password_result"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:inputType="textPassword"
@@ -37,19 +39,15 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal" >
 
+
         <Button
-            android:id="@+id/emailLoginBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/signin"
-            android:layout_weight="1" />
-        <Button
-            android:id="@+id/registrationBtn"
-            android:layout_marginLeft="16dp"
+            android:id="@+id/registrationBtnResult"
+            android:layout_marginLeft="140dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/signup"
-            android:layout_weight="1" />
+
+            />
 
     </LinearLayout>
 
