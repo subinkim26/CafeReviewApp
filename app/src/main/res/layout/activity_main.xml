@@ -4,15 +4,170 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
     tools:context=".MainActivity">
 
+
     <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/scdream2"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="환영합니다.\n 다양한 브랜드관을 만나보세요!"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/scdream2"
+        android:text="가고 싶은 카페, 메뉴 검색"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@android:style/Widget.TextView.PopupMenu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/scdream2"
+
+        android:gravity="center_horizontal"
+        android:text="↘오늘의 추천↙"
+
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="222dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.481"
+        app:srcCompat="@drawable/recommend" />
+
+    <ImageButton
+        android:id="@+id/bookcafe"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="48dp"
+
+
+        android:adjustViewBounds="true"
+        android:backgroundTint="#FFFFFF"
+        android:padding="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.942"
+        app:srcCompat="@drawable/cartoon" />
+
+    <ImageButton
+        android:id="@+id/gamecafe"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="48dp"
+
+        android:cropToPadding="false"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#FFFFFF"
+        android:padding="0dp"
+        android:scaleType="fitXY"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.78"
+        app:srcCompat="@drawable/game" />
+
+    <ImageButton
+        android:id="@+id/cafe"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="48dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#FFFFFF"
+        android:padding="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.78"
+        app:srcCompat="@drawable/dessert" />
+
+    <ImageButton
+        android:id="@+id/catcafe"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="48dp"
+
+
+
+        android:adjustViewBounds="true"
+        android:backgroundTint="#FFFFFF"
+        android:padding="0dp"
+        android:scaleType="fitXY"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.942"
+        app:srcCompat="@drawable/cat" />
+
+    <ImageButton
+        android:id="@+id/flowercafe"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="516dp"
+
+        android:adjustViewBounds="true"
+        android:backgroundTint="#FFFFFF"
+        android:padding="0dp"
+        android:scaleType="fitXY"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/flower" />
+
+    <ImageButton
+        android:id="@+id/studycafe"
+        style="@style/Widget.AppCompat.ImageButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:adjustViewBounds="true"
+        android:backgroundTint="#FFFFFF"
+        android:padding="0dp"
+        android:scaleType="fitXY"
+
+        app:layout_constraintHorizontal_bias="0.233"
+        app:layout_constraintStart_toEndOf="@+id/bookcafe"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.942"
+        app:srcCompat="@drawable/book" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

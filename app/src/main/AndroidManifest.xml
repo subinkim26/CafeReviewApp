@@ -11,8 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CafeReviewApp">
-        <activity android:name=".createUserActivity"></activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".dessertActivity"></activity>
+        <activity android:name=".studyActivity" />
+        <activity android:name=".subActivity" />
+        <activity android:name=".createUserActivity" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
