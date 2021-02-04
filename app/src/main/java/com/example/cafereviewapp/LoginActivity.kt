@@ -42,9 +42,9 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun loginEmail(){
-        var email = edit_email.text.toString()
-        var password = edit_password.text.toString()
-        FirebaseAuth.getInstance().signInWithEmailAndPassword(email,password).addOnCompleteListener { task ->
+        var email1 = edit_email.text.toString()
+        var password2 = edit_password.text.toString()
+        FirebaseAuth.getInstance().signInWithEmailAndPassword(email1,password2).addOnCompleteListener { task ->
             if(task.isSuccessful){
                 var currentUser = FirebaseAuth.getInstance().currentUser
                 val user = FirebaseAuth.getInstance().currentUser?.uid

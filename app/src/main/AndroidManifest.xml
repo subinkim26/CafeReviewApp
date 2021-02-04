@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CafeReviewApp.NoActionBar">
-        <activity android:name=".dessertActivity"></activity>
+        <activity android:name=".dessert_btn_Activity"></activity>
+        <activity android:name=".dessertActivity" />
         <activity android:name=".studyActivity" />
         <activity android:name=".createUserActivity" />
         <activity android:name=".MainActivity" />

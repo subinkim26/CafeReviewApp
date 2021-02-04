@@ -15,8 +15,6 @@ class MainActivity : AppCompatActivity() {
     lateinit var studycafe : Button
     lateinit var gamecafe : Button
 
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -36,7 +34,6 @@ class MainActivity : AppCompatActivity() {
         }
 
 
-
         cafe.setOnClickListener {
             val intent = Intent(this, dessertActivity::class.java)
             startActivity(intent)
@@ -44,11 +41,7 @@ class MainActivity : AppCompatActivity() {
         }
 
 
-
-
-
     }
-
 
 
 }
