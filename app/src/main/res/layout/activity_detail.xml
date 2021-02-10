@@ -11,13 +11,15 @@
     <ImageView
         android:id="@+id/cafeimage"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="400dp"
 
         android:layout_marginTop="50dp"
-        android:layout_weight="3"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_weight="4"
 
         android:adjustViewBounds="true"
-        android:scaleType="fitCenter"
+        android:scaleType="center"
         app:srcCompat="@drawable/cafeimage"
 
 
@@ -26,7 +28,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="7"
+        android:layout_weight="6"
         android:orientation="vertical">
 
         <TextView
@@ -36,7 +38,7 @@
             android:layout_marginStart="15dp"
             android:fontFamily="@font/boldscdream"
             android:textStyle="bold"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="30dp"
             android:text="태릉 스터디 카페"
             android:textSize="25dp" />
 
@@ -48,7 +50,7 @@
             android:layout_marginTop="10dp"
 
             android:fontFamily="@font/scdream2"
-            android:text="공부하기 좋은 카페 초심과 함께하세요."
+            android:text="공부하기 좋은 카페 북킹과 함께하세요."
             android:textSize="18dp" />
 
         <LinearLayout
@@ -125,6 +127,8 @@
             android:textStyle="bold"
             android:text="카페 설명 or 간단 후기? "
             android:fontFamily="@font/scdream2"/>
+
+
 
 
     </LinearLayout>
