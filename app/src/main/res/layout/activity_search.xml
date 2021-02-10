@@ -33,7 +33,7 @@
                 android:textSize="20sp"/>
 
             <ImageButton
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="15dp"
                 android:id="@+id/firstButton"
                 android:layout_gravity="center"
                 android:layout_width="match_parent"
@@ -57,7 +57,7 @@
                 android:adjustViewBounds="true"
                 android:backgroundTint="#FFFFFF"
                 android:scaleType="fitXY"
-                app:srcCompat="@drawable/search_example" />
+                app:srcCompat="@drawable/search_cat" />
 
             <ImageButton
                 android:id="@+id/thirdButton"
