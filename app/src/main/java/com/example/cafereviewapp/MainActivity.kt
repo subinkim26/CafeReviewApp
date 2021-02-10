@@ -58,6 +58,12 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+        button.setOnClickListener {
+            val intent = Intent(this, searchActivity::class.java)
+            startActivity(intent)
+
+        }
+
 
 
     }

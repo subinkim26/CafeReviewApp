@@ -10,5 +10,6 @@
     <string name="failed_signup">회원가입 실패</string>
     <string name="firebase_web_client_id">207195799442-pjv04ntu64ab794mtjtjop09pjc7geev.apps.googleusercontent.com</string>
     <string name="dessert_del">삭제</string>
+    <string name="title_activity_maps">Map</string>
 
 </resources>
